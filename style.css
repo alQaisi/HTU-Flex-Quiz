@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+body{
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 15px;
+    background-color: #f2f2f2;
+}
+header,footer{
+    max-width: 100%;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    margin: 0 15px;
+    font-size: 1.45rem;
+    position: relative;
+    cursor: pointer;
+}
+li::after{
+    content: '';
+    position: relative;
+    display: block;
+    bottom:-15px;
+    left: 0;
+    width:0%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: black;
+    transition: all .3s ease-in-out;
+}
+li:hover::after{
+    width: 100%;
+}
+button{
+    font-size: 1.5rem;
+    padding:7px 23px;
+    border-radius: 9px;
+    border: 1px solid black;
+    transition: all .35s  ease-in-out;
+}
+button:hover{
+    color: #f2f2f2;
+    background-color: black;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    box-sizing: border-box;
+    height:70vh;
+    background:linear-gradient(
+        rgba(54, 1, 75, 0.65),
+        rgba(108, 9, 201, 0.25)
+      ), url("./assets/city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #f2f2f2;   
+    padding: 15px 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main h1{
+    font-size: 2.75rem;
+    margin-bottom:25px;
+}
+main p{
+    font-size: 1.35rem;
+    max-width:600px;
+    line-height:32px;
+    margin-bottom:20px;
+}
+
+ion-icon{
+    margin: 0 10px;
+}
+ion-icon:hover{
+    cursor: pointer;
+    filter: opacity(.5);
+}
+.footer-text{
+    font-size: 1.2rem;
+}
+footer{
+    margin-top:25px;
+}
+a{
+    all: unset;
+}
+@media only screen and (max-width: 675px){
+    li{
+        font-size: 1.25rem;
+    }
+    button{
+        font-size: 1.35rem;
+        padding:5px 15px;
+    }
+    main{
+        padding: 35px;
+    }
+}
+@media only screen and (max-width:590px){
+    body{
+        padding: 0;
+    }
+    header,footer{
+        flex-direction: column;
+        justify-content: center;
+        gap:25px;
+    }
+    footer{
+        margin-top:0px;
+    }
+}
