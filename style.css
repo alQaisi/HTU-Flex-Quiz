@@ -119,12 +119,13 @@ a{
     body{
         padding: 0;
     }
-    header,footer{
+    header{
         flex-direction: column;
-        justify-content: center;
         gap:25px;
     }
     footer{
+        gap:25px;
+        flex-direction: column-reverse;
         margin-top:0px;
     }
 }
