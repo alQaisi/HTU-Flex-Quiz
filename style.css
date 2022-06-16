@@ -63,8 +63,8 @@ main{
     height:70vh;
     min-height:400px;
     background:linear-gradient(
-        rgba(54, 1, 75, 0.65),
-        rgba(108, 9, 201, 0.25)
+        rgba(158, 137, 184, 1),
+        rgba(158, 137, 184, 1)
       ), url("./assets/city.jpg");
     background-repeat: no-repeat;
     background-size: cover;
