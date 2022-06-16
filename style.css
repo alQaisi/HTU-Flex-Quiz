@@ -69,6 +69,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-blend-mode: color;
     position: relative;
     color: #f2f2f2;   
     padding: 15px 125px;
